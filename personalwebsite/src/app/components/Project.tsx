@@ -31,7 +31,7 @@ export default function ProjectContent(props: Content) {
     }
 
     return (
-        <div className="bg-[#E5BEEC] w-4/5 text-center rounded-lg pl-3 pr-3 pb-3">
+        <div className="animate-fade-left bg-[#E5BEEC] w-4/5 text-center rounded-lg pl-3 pr-3 pb-3">
             <div className="grid grid-cols-5">
                 <p className="col-start-3 text-xl text-[#E5BEEC] pt-2 pb-2 bg-[#917FB3] rounded-lg items-center my-2">
                     {title}
