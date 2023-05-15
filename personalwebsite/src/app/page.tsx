@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="grid h-screen 
+    <div className="grid h-[calc(100vh-64px)]
     bg-gradient-to-r 
     from-[#2A2F4F] 
     to-[#E5BEEC]   
