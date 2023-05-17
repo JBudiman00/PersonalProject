@@ -19,9 +19,9 @@ export default function ProjectContent(props: Content) {
         return (
             <div className="flex flex-col content-start bg-[#917FB3] rounded-lg items-center pb-3">
                 <p className="text-[#FDE2F3] pt-2">{title}</p>
-                {arr.map((item) => {
+                {arr.map((item, i) => {
                     return (
-                        <div className="flex bg-[#2A2F4F] text-[#FDE2F3] w-5/6 mt-2 rounded-xl h-8 items-center justify-center">
+                        <div key={i} className="flex bg-[#2A2F4F] text-[#FDE2F3] w-5/6 mt-2 rounded-xl h-8 items-center justify-center">
                             <p>{item}</p>
                         </div>
                     );
