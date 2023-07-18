@@ -41,7 +41,7 @@ export default function ProjectContent(props: Content) {
                 <p className="text-[#E5BEEC] mx-2 mt-1">{content}</p>
             </div>
             <div className="h-8"></div>
-            <div className="flex flex gap-x-32 justify-center">
+            <div className="flex gap-x-32 justify-center">
                 <div className="flex flex-col w-1/5">
                     {list('Frameworks', framework)}
                     <a href={git} target="_blank">

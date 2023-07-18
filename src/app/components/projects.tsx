@@ -1,4 +1,4 @@
-import ProjectContent from '../components/Project';
+import ProjectContent from './Project';
 
 export default function Project () {
     const content0=`For this personal website I built, I wanted to strengthen my frontend development skills. I used Figma to design
@@ -19,7 +19,7 @@ export default function Project () {
     The website was hosted using firebase.`;
     
     return (
-        <>
+        <div id="projects">
         <div className="h-6"></div>
         <div className="grid grid-cols-5 h-16 animate-fade">
             <div className="flex items-center justify-center col-start-3 col-span-1 text-2xl text-[#2A2F4F] bg-[#E5BEEC] text-center rounded-lg font-bold">
@@ -33,6 +33,6 @@ export default function Project () {
             <ProjectContent content={content2} framework={["React.JS"]} languages={["HTML", "JavaScript", "CSS"]} git="https://github.com/JBudiman00/PokemonWebDev" website="https://pokemonvisual-73748.web.app/" title="Pokemon Selection"/>
         </div>
         <div className="h-6"></div>
-        </>
+        </div>
     );
 }

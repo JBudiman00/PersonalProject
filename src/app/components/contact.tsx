@@ -1,7 +1,7 @@
 export default function About () {
     return(
-        <div className="animate-fade-up">
-            <div className="h-6"></div>
+        <div className="animate-fade-up" id="contact">
+            <div className="h-12"></div>
             <div className="grid grid-cols-5 h-16">
                 <div className="flex items-center justify-center col-start-3 col-span-1 text-2xl text-[#2A2F4F] bg-[#E5BEEC] text-center rounded-lg font-bold">
                     <p>Contact</p>
@@ -18,6 +18,7 @@ export default function About () {
                     <img src="/mail.png" className="w-16"/>
                 </a>
             </div>
+            <div className="h-24"></div>
         </div>
     );
 }
