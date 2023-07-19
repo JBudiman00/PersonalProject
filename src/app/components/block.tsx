@@ -17,7 +17,7 @@ export default function ProjectContent(props: Content) {
 
     const list = (title: String, arr: Array<String>) => {
         return (
-            <div className="flex flex-col content-start bg-[#917FB3] rounded-lg items-center pb-3">
+            <div className="flex flex-col bg-[#917FB3] rounded-lg items-center pb-3 grow">
                 <p className="text-[#FDE2F3] pt-2">{title}</p>
                 {arr.map((item, i) => {
                     return (
@@ -31,24 +31,22 @@ export default function ProjectContent(props: Content) {
     }
 
     return (
-        <div className="animate-fade-left bg-[#E5BEEC] w-4/5 text-center rounded-lg pl-3 pr-3 pb-3">
-            <div className="grid grid-cols-5">
-                <p className="col-start-3 text-xl text-[#E5BEEC] pt-2 pb-2 bg-[#917FB3] rounded-lg items-center my-2">
-                    {title}
-                </p>
-            </div>
-            <div className="flex flex-col content-start bg-[#917FB3] rounded-lg items-center pb-3">
-                <p className="text-[#E5BEEC] mx-2 mt-1">{content}</p>
+        <div className="flex flex-col items-center bg-[#E5BEEC] w-4/5 text-center rounded-lg pl-3 pr-3 pb-3">
+            <p className="col-start-3 text-xl text-[#FDE2F3] p-4 bg-[#917FB3] rounded-lg items-center my-2">
+                {title}
+            </p>
+            <div className="bg-[#917FB3] rounded-lg p-2 w-2/3">
+                <p className="text-[#FDE2F3] mx-2 mt-1">{content}</p>
             </div>
             <div className="h-8"></div>
             <div className="flex gap-x-32 justify-center">
-                <div className="flex flex-col w-1/5">
+                <div className="flex flex-col w-64">
                     {list('Frameworks', framework)}
                     <a href={git} target="_blank">
                         <img className="h-10 w-10 mx-auto mt-2" src="/githubicon.png" />
                     </a>
                 </div>
-                <div className="flex flex-col w-1/5">
+                <div className="flex flex-col w-64">
                     {list('Languages', languages)}
                     <a href={website} target="_blank">
                         <img className="h-10 w-10 mx-auto mt-2" src="/link.png" />
