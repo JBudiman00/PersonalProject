@@ -51,7 +51,7 @@ export default function About () {
                     similar to any other fantasy type game. I learned the basics of frontend, utilizing CSS, Javascript and PHP to build it.
                     From the backend, PHP was also utilized to extract information from a MySQL database. As a side component, our project had to include a stock portfolio
                     recommendation system. 
-                    <br></br>&emsp;Using logistic regression, I designed a ML model that could accurately predict whether a stock's variance would be either positive or negative 
+                    <br></br>&emsp;Using logistic regression, I designed a ML model that could accurately predict whether a stock&apos;s variance would be either positive or negative 
                     with ~65% accuracyy. The Markowitz mean-variance portfolio algorithm ingested the stocks that were percieved to have a high chance of continually high variance and
                     would diversify the portfolio to reduce the overall risk associated. This machine model was developed and deployed within R.  
                     <br></br>&emsp;Through this experience, I learned to love software development. The entire process from designing to documentation to scaling to building for production presented
